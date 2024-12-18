@@ -1,6 +1,7 @@
 # Imports
 import numpy as np
 from scipy import stats
+stats.norm(..)
 
 from .Base import OptionPricingModel
 
