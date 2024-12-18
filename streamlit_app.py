@@ -6,9 +6,11 @@ from datetime import datetime, timedelta
 import streamlit as st
 
 # Local package imports
-import sys
-sys.path.append('/path/to/option-pricing-simulation')
-from option_Pricing import BlackScholesModel, MonteCarloPricing, BinomialTreeModel, Ticker
+from option_Pricing.BlackScholesModel import BlackScholesModel
+from option_Pricing.MonteCarloSimulation import MonteCarloPricing
+from option_Pricing.BinomialTreeModel import BinomialTreeModel
+from option_Pricing.Ticker import Ticker
+
 
 class OPTION_PRICING_MODEL(Enum):
     BLACK_SCHOLES = 'Black Scholes Model'
